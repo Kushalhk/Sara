@@ -141,7 +141,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("🌀 𝐓𝐆 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🌀", url=f"https://t.me/+iLfZB23wdMJiNjQ1") 
+            InlineKeyboardButton("☞⁠￣⁠ʜᴋ ᴘʀᴏᴅᴜᴄᴛɪᴏɴꜱ￣⁠☞", url=f"https://t.me/+iLfZB23wdMJiNjQ1") 
         ])
     else:
         btn = []
@@ -492,7 +492,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     # if ENABLE_SHORTLINK == True:
     btn.insert(0, [
         InlineKeyboardButton("sᴛᴀʀᴛ ʙᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
-        InlineKeyboardButton("🌀 𝐓𝐆 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🌀", url=f"https://t.me/+iLfZB23wdMJiNjQ1")
+        InlineKeyboardButton("☞⁠￣⁠ʜᴋ ᴘʀᴏᴅᴜᴄᴛɪᴏɴꜱ￣⁠☞", url=f"https://t.me/+iLfZB23wdMJiNjQ1")
     ])
     # else:
     #     btn.insert(0, [
@@ -661,7 +661,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             for file in files
         ]
     btn.insert(0, [
-        InlineKeyboardButton("🌀 𝐓𝐆 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🌀", url=f"https://t.me/+iLfZB23wdMJiNjQ1"),
+        InlineKeyboardButton("☞⁠￣⁠ʜᴋ ᴘʀᴏᴅᴜᴄᴛɪᴏɴꜱ￣⁠☞", url=f"https://t.me/+iLfZB23wdMJiNjQ1"),
         InlineKeyboardButton("Sᴇʟᴇᴄᴛ ᴀɢᴀɪɴ", callback_data=f"seasons#{key}")
     ])
     
@@ -2077,7 +2077,7 @@ async def auto_filter(client, msg, spoll=False):
     #         InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"send_fall#{pre}#{message.chat.id}-{message.id}#{0}")
     #     ])
         btn.insert(0, [
-            InlineKeyboardButton("🌀 𝐓𝐆 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🌀", url=f"https://t.me/+iLfZB23wdMJiNjQ1")
+            InlineKeyboardButton("☞⁠￣⁠ʜᴋ ᴘʀᴏᴅᴜᴄᴛɪᴏɴꜱ￣⁠☞", url=f"https://t.me/+iLfZB23wdMJiNjQ1")
         ])
     # if ENABLE_TUTORIAL == True:
     #     btn.insert(0, [
