@@ -19,3 +19,4 @@ aiofiles==22.1.0
 telegraph==2.2.0
 Pillow==9.4.0
 pyspellchecker
+openai==0.25.0
