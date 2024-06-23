@@ -54,6 +54,7 @@ NEW_USER_LOG = int(environ.get('NEW_USER_LOG', ''))
 
 
 # Others
+AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
 VERIFY = bool(environ.get('VERIFY', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
 SHORTLINK_API = environ.get('SHORTLINK_API', '')
