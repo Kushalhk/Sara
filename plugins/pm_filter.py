@@ -1518,10 +1518,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⚜️', url='https://t.me/TG_UPDATES1')
         ],[
-            InlineKeyboardButton('🔍 ɢʀᴏᴜᴘ¹', url='https://t.me/+yaOfq6YWZJc0YjNl'),
+            InlineKeyboardButton('🔍 ɢʀᴏᴜᴘ¹', url='http://t.me/Kr_Movie2'),
             InlineKeyboardButton('ɢʀᴏᴜᴘ² 🔎', url='https://t.me/+T6GsioUXJyM5MTQ1')
         ],[
-            InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url='https://t.me/+xERRyo5L90liNWM1')
+            InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url='https://t.me/+NS-kPna-70w3Y2I9')
         ],[
             InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/TG_SUPPORT_GROUP')
