@@ -1,4 +1,3 @@
-# Kanged From @TroJanZheX
 import asyncio
 import re
 import ast
@@ -1822,7 +1821,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
-                InputMediaPhoto("https://graph.org/file/7bbeefea729a2644e925d.jpg")
+                InputMediaPhoto("https://graph.org/file/bac0632df5975943c1bf6.jpg")
             )
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -1848,7 +1847,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
-                InputMediaPhoto("https://graph.org/file/7bbeefea729a2644e925d.jpg")
+                InputMediaPhoto("https://graph.org/file/bac0632df5975943c1bf6.jpg")
             )
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -2017,7 +2016,7 @@ async def auto_filter(client, msg, spoll=False):
             btn = [[
                     InlineKeyboardButton(f"Searching  🔍  for {search}", url=CHNL_LNK)
                     ]]
-            dlt = await message.reply_sticker('CAACAgIAAxkBAAI5d2V1dOBBBxsXQE90NmXteUw3T_sLAAKrAQACEBptIni-vpHMVGzHHgQ', reply_markup=InlineKeyboardMarkup(btn))
+            dlt = await message.reply_sticker('CAACAgIAAxkBAAMXZpH5AUrSC8Q9djHPQ3sbh7RAT7YAAlUAA6_GURpk5_zwJekQvx4E', reply_markup=InlineKeyboardMarkup(btn))
             search = search.lower()
             find = search.split(" ")
             search = ""
@@ -2051,7 +2050,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [[
                 InlineKeyboardButton(f"Searching  🔍  for {search}", url=CHNL_LNK)
                 ]]
-        dlt = await message.reply_sticker('CAACAgIAAxkBAAI5d2V1dOBBBxsXQE90NmXteUw3T_sLAAKrAQACEBptIni-vpHMVGzHHgQ', reply_markup=InlineKeyboardMarkup(btn))
+        dlt = await message.reply_sticker('CAACAgIAAxkBAAMXZpH5AUrSC8Q9djHPQ3sbh7RAT7YAAlUAA6_GURpk5_zwJekQvx4E', reply_markup=InlineKeyboardMarkup(btn))
         settings = await get_settings(message.chat.id)
         await msg.message.delete()
     # if 'is_shortlink' in settings.keys():
