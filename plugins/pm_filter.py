@@ -78,8 +78,8 @@ async def pm_text(bot, message):
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
     await message.reply_text(
-         text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://t.me/Kr_Movie2>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/Kr_Movie2")]])
+         text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://t.me/+CO4_qvZ9cis3MWI1>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>",   
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/+CO4_qvZ9cis3MWI1")]])
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
@@ -1396,10 +1396,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                     InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('▪️ ᴜᴘᴅᴀᴛᴇꜱ ▪️', callback_data='channels')
-                ],[
                     InlineKeyboardButton('▫️ ᴄᴏᴍᴍᴀɴᴅꜱ ▫️', callback_data='help'),
                     InlineKeyboardButton('🔸 ᴀʙᴏᴜᴛ 🔹', callback_data='about')
+                ],[
+                    InlineKeyboardButton('▪️ ᴜᴘᴅᴀᴛᴇꜱ ▪️', callback_data='channels')
                 ]]        
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1421,26 +1421,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ],[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('Gʟᴏʙᴀʟ Fɪʟᴛᴇʀs', callback_data='global_filters')
-        ]]
-        
+        ]]   
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text="◆◇◇"
-        )
-        await asyncio.sleep(0.3)
-        await query.message.edit_text(
-            text="◆◆◇"
-        )
-        await asyncio.sleep(0.3)
-        await query.message.edit_text(
-            text="◆◆◆"
-        ) 
         await query.message.edit_text(
             text=script.ALL_FILTERS.format(query.from_user.mention),
             reply_markup=reply_markup,
@@ -1455,18 +1442,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text="◆◇◇"
-        )
-        await asyncio.sleep(0.1)
-        await query.message.edit_text(
-            text="◆◆◇"
-        )
-        await asyncio.sleep(0.2)
-        await query.message.edit_text(
-            text="◆◆◆"
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1495,18 +1470,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text="▣☐☐"
-        )
-        await asyncio.sleep(0.1)
-        await query.message.edit_text(
-            text="▣▣☐"
-        )
-        await asyncio.sleep(0.2)
-        await query.message.edit_text(
-            text="▣▣▣"
         )
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
@@ -1554,18 +1517,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="▣☐☐"
-        )
-        await asyncio.sleep(0.1)
-        await query.message.edit_text(
-            text="▣▣☐"
-        )
-        await asyncio.sleep(0.2)
-        await query.message.edit_text(
-            text="▣▣▣"
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -1579,18 +1530,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text="▣☐☐"
-        )
-        await asyncio.sleep(0.1)
-        await query.message.edit_text(
-            text="▣▣☐"
-        )
-        await asyncio.sleep(0.2)
-        await query.message.edit_text(
-            text="▣▣▣"
         )
         await query.message.edit_text(
             text=script.SOURCE_TXT,
@@ -1816,12 +1755,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "owner_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/KUSHALHK")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/KR_Movie2")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
-                InputMediaPhoto("https://graph.org/file/bac0632df5975943c1bf6.jpg")
+                InputMediaPhoto("https://graph.org/file/50b01baaf8bf79c2ac7b3.jpg")
             )
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -1847,19 +1786,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
-                InputMediaPhoto("https://graph.org/file/bac0632df5975943c1bf6.jpg")
-            )
-            reply_markup = InlineKeyboardMarkup(btn)
-            await query.message.edit_text(
-                text="▣☐☐"
-            )
-            await asyncio.sleep(0.1)
-            await query.message.edit_text(
-                text="▣▣☐"
-            )
-            await asyncio.sleep(0.2)
-            await query.message.edit_text(
-                text="▣▣▣"
+                InputMediaPhoto("https://graph.org/file/50b01baaf8bf79c2ac7b3.jpg")
             )
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -1885,7 +1812,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "shortlink_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/Tg_support1_bot")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/KR_Movie2")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
