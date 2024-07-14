@@ -1,6 +1,7 @@
 class script(object):
     START_TXT = """<b>Hᴇʟʟᴏ {},
-<blockquote>Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ As Aᴅᴍɪɴ Aɴᴅ Eɴᴊᴏʏ 😍</b></blockquote>"""
+    
+<blockquote>ᴍʏ ɴᴀᴍᴇ ɪꜱ <a href=https://t.me/{}>{}</a>, I ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇꜱ ᴀɴᴅ ꜱᴇʀɪᴇꜱ ɪᴜꜱᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀꜱ ᴀ ᴀᴅᴍɪɴ ᴀɴᴅ ꜱᴇᴇ ᴍʏ ᴍᴀɢɪᴄ 🪄</b></blockquote>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
@@ -133,14 +134,10 @@ Nᴀᴍᴇ - {}"""
 ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ ɪɴ ɢᴏᴏɢʟᴇ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ 😃
 
 <blockquote>ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ 👇</blockquote>
-
 ᴇxᴀᴍᴘʟᴇ : Kalki or Kalki 2024 or Kalki 2024 Hindi
 
 <blockquote>ꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ 👇</blockquote>
-
-ᴇxᴀᴍᴘʟᴇ : Asur S02 or Asur S01E04 or Asur S03E24
-
-🚯 Dᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)</b>"""
+ᴇxᴀᴍᴘʟᴇ : Asur S02 or Asur S01E04 or Asur S03E24</b>"""
 
     I_CUD_NT = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}.
 ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ..."""
@@ -197,12 +194,10 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 ★ #𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁𝘀 ★
 
 𝗜𝗗 <b>: {}</b>
-
 𝗡𝗮𝗺𝗲 <b>: {}</b>
-
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """ 📂 <i><a href="https://telegram.me/Kr_Movie2">{file_name}</a></i>"""
+    CAPTION = """ 📂 <i><a href="https://t.me/+E9LXRQii7gk2NWY1">{file_name}</a></i>"""
 
     FORCE_SUB = """
 **⚠️ Pʟᴇᴀsᴇ ғᴏʟʟᴏᴡ ᴛʜɪs ʀᴜʟe ⚠️**
